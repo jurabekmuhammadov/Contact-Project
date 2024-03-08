@@ -1,0 +1,60 @@
+#modal {
+  background-color: rgba(0, 0, 0, 0.667);
+  position: fixed;
+  z-index: 100000;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  top: -100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    border-radius: 30px;
+    background-color: rgb(190, 211, 255);
+    padding: 80px 20px 50px 20px;
+    position: relative;
+    height: 60%;
+    width: 500px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+    .add {
+      grid-column-start: 1;
+      grid-column-start: 2;
+      grid-row-start: 6;
+      grid-row-end: 7;
+      border: none;
+      background-color: rgb(52, 52, 255);
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .close {
+      padding: 5px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      border: none;
+      background-color: rgb(255, 52, 52);
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    input,
+    select {
+      outline: none;
+      padding: 0 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.356);
+    }
+  }
+}
+
+.modal-open {
+  top: 0% !important;
+}
